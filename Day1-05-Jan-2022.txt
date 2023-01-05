@@ -1,0 +1,16 @@
+Full stack web application development
+using Python,Flask,My-SQL and React
+
+1. Develop a signup page
+having following fields
+
+Name <text box>
+Email <text box>
+Mobile <text box>
+Password <password>
+<Submit button>
+file:///E:/kaushalya.tech/consultancy/newhorizoncollegeofengineering/2022/pythonfullstack/vap/programs/web/2-html-signupform.html?name=&email=&mobile=&password=
+
+file:///E:/kaushalya.tech/consultancy/newhorizoncollegeofengineering/2022/pythonfullstack/vap/programs/web/2-html-signupform.html
+
+
