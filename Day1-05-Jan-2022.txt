@@ -15,4 +15,16 @@ file:///E:/kaushalya.tech/consultancy/newhorizoncollegeofengineering/2022/python
 
 kaushalya.tech
 
+CSS - Cascading Style Sheet
+Inline styling
+Internal styling
+external styling
+
+selectors
+id
+class
+
+
+
+
 
