@@ -29,7 +29,23 @@ Enter a number = 6
 6 X 1 = 6
 ...
 6 X 10 = 60
-2.
+2. Write a program to print the grade of a student based on the
+marks scored in a subject.
+prompt the user to enter the marks
+
+marks >90 && marks <=100 - A+
+marks >80 && marks <=90 - A
+marks >70 && marks <=80 - B+
+marks >60 && marks <=70 - B
+other than above
+less than B
+
+functions
+
+
+
+
+
 
 
 
