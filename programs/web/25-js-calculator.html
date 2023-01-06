@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <label for="fn">Enter a number</label><br>
+    <input type="text" name="fn" id="fn"><br>
+    <label for="oper">Enter a operator</label><br>
+    <input type="text" name="oper" id="oper"><br>
+    <label for="sn">Enter another number</label><br>
+    <input type="text" name="sn" id="sn"><br>
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+    
+    <p id="result"></p>
+
+    <script>
+        function calculate(){
+            let fn = parseInt(document.getElementById('fn').value)
+            let oper = document.getElementById('oper').value            
+            let sn = parseInt(document.getElementById('sn').value)
+            let result=0;
+            let msg = ''
+            if (oper=='+'){
+                result = fn+sn                
+            }else if (oper =='-'){
+                result = fn-sn               
+            }else if (oper =='*'){
+                result = fn*sn
+            }else if (oper =='/'){
+                result = fn/sn
+            }else{
+                result ='Invalid operator'
+            }
+
+            msg = fn+ oper +sn+" = "+result
+            
+            document.getElementById('result').innerHTML=msg
+
+
+        }
+
+        function reset(){
+            document.getElementById('fn').value=''
+            document.getElementById('oper').value=''
+            document.getElementById('sn').value=''
+            document.getElementById('result').innerHTML=''       
+                    
+        }
+
+    </script>
+    
+
+    
+
+    
+</body>
+</html>
