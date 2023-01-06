@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+    <h1>Array's demo</h1>
+
+    <script>
+        console.log('arrays ')
+        marks = [24,12,24,25,23]
+        console.log('marks array ',marks)
+        element0 = marks[0]
+        console.log('element at zeroth position ',element0)
+        console.log('length  ',marks.length)
+        marks.push(13)
+        marks.push(16)
+        console.log('marks array: afer push  ',marks)
+        marks.pop()
+        console.log('marks array: afer pop  ',marks)  
+        /**
+        maximum = marks.max()
+        minimum = marks.min()
+        total = marks.sum()
+        console.log('marks array: maximum  ',maximum)
+        console.log('marks array:  minimum ',minimum)
+        console.log('marks array:  total ',total)
+        */
+
+        total = 0
+
+        for (i=0;i<marks.length;i++){
+            total = total +marks[i]
+        }
+        console.log('total is ',total)
+          
+    
+
+        
+        
+    </script>
+    
+</body>
+</html>
