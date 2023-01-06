@@ -15,4 +15,12 @@ Operators
 1. Arithmetic - +,-,*,/,%,**
 2. Relational/comparision - >,<,>=,<=,==,===,!=
 3. Logical operators - &&,||,!
+program - 18
+
+Loops
+
+while
+for 
+do -- while
+
 
