@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+
+    <script>
+        emp={
+            code:1,
+            name:'ravi',
+            dept:'IT',
+            desg:'Software Engineer',
+            sal:50000
+        }
+
+        employees=[
+                {
+                    code:1,
+                    name:'ravi',
+                    dept:'IT',
+                    desg:'Software Engineer',
+                    sal:50000
+                },
+                {
+                    code:2,
+                    name:'ramya',
+                    dept:'IT',
+                    desg:'Software Engineer',
+                    sal:50000
+                },
+                {
+                    code:3,
+                    name:'abdul',
+                    dept:'Accounts',
+                    desg:'Executive',
+                    sal:30000
+                }
+
+        ]
+        totalsal =0
+        for (i=0;i<employees.length;i++){
+            emp= employees[i]
+            console.log('Name '+emp.name + " Salary : "+emp.sal)
+            totalsal +=emp.sal
+        }
+
+        console.log('total salary '+totalsal)
+    </script>
+    
+</body>
+</html>
