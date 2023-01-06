@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShoppe</title>
+</head>
+<body>
+
+    <h1>eShoppe</h1>
+
+    <script>
+
+        function bill(purchase_amt){
+            discountrate =0
+            net_amt = 0
+            discount = 0
+            if (purchase_amt <=10000)
+                discountrate=5/100
+            else if (purchase_amt >10000 && purchase_amt <=20000)
+                discountrate=10/100
+            else 
+                discountrate=20/100
+            discount =  purchase_amt*discountrate
+            net_amt = purchase_amt-discount
+            return [discount,net_amt]   
+        }
+
+        purchase_amt=parseInt(prompt("enter purchase amount"))
+        billinfo = bill(purchase_amt) 
+        console.log("net amount to pay ",billinfo[1])
+        console.log("saving on this purchase ",billinfo[0])
+        
+
+    </script>
+    
+</body>
+</html>

@@ -41,6 +41,20 @@ other than above
 less than B
 
 functions
+program 21
+3. Write a function to calculate discount and net amount as per the 
+details provided below
+
+purchase_amt <=10000 - discountrate = 5%
+purchase_amt >10000 && - purchase_amt <=20000 discountrate = 10%
+purchase_amt >20000  discountrate = 20%
+prompt the user to enter the purchase amount
+
+Sample calculation:
+purchase_amt = 10000
+discount = (5/100)*10000=500
+net amount =purchase_amt- discount =9500
+
 
 
 
