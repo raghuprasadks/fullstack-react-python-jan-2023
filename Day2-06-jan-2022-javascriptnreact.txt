@@ -55,6 +55,19 @@ purchase_amt = 10000
 discount = (5/100)*10000=500
 net amount =purchase_amt- discount =9500
 
+24-js-signup.html
+
+Develop user interface to demonstrate simple calculator
+(+,-,*,/)
+
+Enter a number <text box>
+Enter operator - + <text box>
+Enter another number - <text box>
+<Calculate button>
+10 + 12 = 22
+12 - 10 = 2
+
+
 
 
 
