@@ -8,3 +8,11 @@ program - 14 ,15,16
 
 
 Java Script
+Data types
+program - 17
+
+Operators
+1. Arithmetic - +,-,*,/,%,**
+2. Relational/comparision - >,<,>=,<=,==,===,!=
+3. Logical operators - &&,||,!
+
