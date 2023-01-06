@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.example {
+  padding: 20px;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+  .product{
+    width: 100%;
+    border: 2px solid brown;
+    display: inline-block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+  .product{
+    width: 100%;
+    border: 2px solid red;
+    display: inline-block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+  .product{
+    width: 30%;
+    border: 2px solid red;
+    display: inline-block;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+  .product{
+    width: 30%;
+    border: 2px solid red;
+    display: inline-block;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+  .product{
+    width: 30%;
+    border: 2px solid red;
+    display: inline-block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+    <div class="product">
+        <p>Product 1</p>
+        <p>Product 1 description</p>
+        <p>Product 1 price</p>
+    </div>
+    <div class="product">
+        <p>Product 2</p>
+        <p>Product 2 description</p>
+        <p>Product 2 price</p>
+    </div>
+    <div class="product">
+        <p>Product 3</p>
+        <p>Product 3 description</p>
+        <p>Product 3 price</p>
+    </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+

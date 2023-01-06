@@ -2,3 +2,6 @@ Agenda:
 1. Java Script
 2. Introduction to React
 kaushalya.tech
+
+css media queries
+program - 14 and 15
