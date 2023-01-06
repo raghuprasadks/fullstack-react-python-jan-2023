@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Master</title>
+</head>
+<body>
+    <label for="code">Code</label><br>
+    <input type="text" name="code" id="code"><br>
+    <label for="name">Name</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label for="dept">Department</label><br>
+    <input type="text" name="dept" id="dept"><br>
+    <button onclick="addEmployee()">Add Employee</button>
+    <button onclick="displayEmployee()">Display Employee</button><br>
+    <table id="tbl"></table>
+    
+
+    <script>
+    employees=[]
+    
+    function Employee(code,name,dept){
+        this.name =name;
+        this.code = code;
+        this.dept = dept;
+        this.info = function(){
+            return "code : "+this.code + " Name "+this.name +" Dept "+this.dept
+        }    
+    }
+
+        function addEmployee(){
+           // alert ('add')
+
+           let code =document.getElementById('code').value
+           let name =document.getElementById('name').value
+           let dept =document.getElementById('dept').value
+           
+           emp = new Employee(code,name,dept)
+           employees.push(emp)
+           console.log('employees '+emp.info())
+           reset()
+
+        }
+
+        function displayEmployee(){
+            //alert ('display')
+
+            let header = "<tr><th>Code</th><th>Name</th><th>Department</th></tr>"
+            let data = header
+
+            for (emp of employees){
+                data = data+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td></tr>"
+            }
+            document.getElementById("tbl").innerHTML=data
+        }
+
+        function reset(){
+            document.getElementById('code').value=''
+           document.getElementById('name').value=''
+           document.getElementById('dept').value=''
+            
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
