@@ -23,4 +23,13 @@ while
 for 
 do -- while
 
+1. Write a program to print multiplication table of any given number
+Enter a number = 6
+
+6 X 1 = 6
+...
+6 X 10 = 60
+2.
+
+
 
