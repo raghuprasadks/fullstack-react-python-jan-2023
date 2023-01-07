@@ -49,7 +49,6 @@
         console.log('below15marks : ',below15marks)
         var below15marksarr = marks.filter((mark)=>mark<15)
         console.log('below15marksarr : ',below15marksarr)
-
         employees=[
             {
                 code:1,
@@ -70,12 +69,13 @@
                 sal:35000
             }
         ]
-        console.log('display employees having salary greater than or equal to 50k')
-
+        console.log('display employees having salary greater than or equal to 50k')  
         var empsal50k = employees.filter((emp)=>emp.sal>=50000)
         console.log(empsal50k)
 
-
+        console.log('display employees belonging to AIML')  
+        var empofAIML = employees.filter((emp)=>emp.dept=='AIML')
+        console.log(empofAIML)
 
     </script>
     
