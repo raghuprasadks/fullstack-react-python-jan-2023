@@ -1,0 +1,15 @@
+Agenda:
+lambda functions
+JS Higher Order functions
+destructuring
+rest operator
+
+react
+
+node
+
+Java script - ECMA Script
+
+
+write a function to calculate simple interest
+

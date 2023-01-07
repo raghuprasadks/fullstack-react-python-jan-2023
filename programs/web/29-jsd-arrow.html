@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+
+    <h1>Arrow function</h1>
+
+    <script>
+
+        function greet(){
+            console.log('Welcome to regular greet function')
+        }
+
+        greet()
+
+        var greetnew = function (){
+            console.log('Welcome to nameless function greetnew')
+        }
+        greetnew()
+
+        var greetnewarrow=()=>console.log('welcome to arrow function')
+
+        greetnewarrow()
+
+
+        var addregular = function(n1,n2){
+            return n1+n2
+        }
+        result = addregular(100,120)
+        console.log('result of addition regular nameless function ',result)
+
+        var addarrow =(n1,n2)=>n1+n2
+        result =addarrow(110,120)
+        console.log('add arrow ',result)
+
+        var sireg = function(p,r,t){
+            return (p*r*t)/100
+        }
+
+        si= sireg(10000,4,1)
+        console.log('simple interest ',si)
+
+        var siarrow = (p,r,t)=>(p*r*t)/100
+        si=siarrow(20000,4,2)
+        console.log('simple interest arrow ',si)
+
+
+
+    </script>
+    
+</body>
+</html>
