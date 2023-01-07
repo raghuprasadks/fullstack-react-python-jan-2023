@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+
+
+</head>
+<body>
+    <h1>Spread operator</h1>
+    <script>
+        arr1 = [2,4,6,8]
+        arr2=[3,5,7,9]
+
+        arr3 = [...arr1,...arr2]
+        console.log('spread operator .. array ',arr3)
+
+        obj1={
+            code:1,
+            name:'ranga',
+            sal:30000
+        }
+        obj2 ={
+            desg:'SE',
+            dept:'IT'
+        }
+
+        obj3={...obj1,...obj2}
+        console.log('obj3 ::',obj3)
+
+    </script>
+</body>
+</html>
