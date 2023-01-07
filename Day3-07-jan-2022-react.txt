@@ -1,6 +1,7 @@
 Agenda:
 lambda functions
-JS Higher Order functions
+JS Higher Order functions - map,filter and reduce
+
 destructuring
 rest operator
 
@@ -12,4 +13,7 @@ Java script - ECMA Script
 
 
 write a function to calculate simple interest
+
+write an arrow function to check a given number is prime or not
+(num)
 

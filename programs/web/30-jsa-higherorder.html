@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<body>
+
+    <h1>Higher Order Functions</h1>
+
+    <script>
+
+        console.log('higher order functions - map')
+
+        marks = [19,20,21,22,23]
+
+        for (i=0;i<marks.length;i++){
+            marks[i]=marks[i]+1
+        }
+
+        console.log('after adding one as bonus marks ',marks)
+
+        function increment(value){
+            return value +1
+        }
+
+        var updmarks = marks.map(increment)
+        console.log('updated marks ',updmarks)
+
+        varupdmarksarrow = marks.map((mark)=>mark+1)
+        console.log('map with arrow function ',varupdmarksarrow)
+
+
+    </script>
+    
+</body>
+</html>
