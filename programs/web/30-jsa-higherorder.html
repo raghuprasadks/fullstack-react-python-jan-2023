@@ -32,6 +32,26 @@
         varupdmarksarrow = marks.map((mark)=>mark+1)
         console.log('map with arrow function ',varupdmarksarrow)
 
+        console.log('map function parameters')
+        function params(value,i,arr){
+            console.log("value :",value,"i ",i," arr ",arr)
+        }
+
+        marks.map(params)
+
+        console.log('filter')
+        marks = [10,12,19,20,13,21,14,22,23]
+
+        function below15(value){
+            return value<15
+        }
+        var below15marks = marks.filter(below15)
+        console.log('below15marks : ',below15marks)
+        var below15marksarr = marks.filter((mark)=>mark<15)
+        console.log('below15marksarr : ',below15marksarr)
+
+
+
 
     </script>
     
