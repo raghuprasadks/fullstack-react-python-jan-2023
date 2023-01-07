@@ -50,6 +50,30 @@
         var below15marksarr = marks.filter((mark)=>mark<15)
         console.log('below15marksarr : ',below15marksarr)
 
+        employees=[
+            {
+                code:1,
+                name:'ravi',
+                dept:'AIML',
+                sal:55000
+            },
+            {
+                code:2,
+                name:'rakhi',
+                dept:'AIML',
+                sal:60000
+            },
+            {
+                code:3,
+                name:'gagan',
+                dept:'CS',
+                sal:35000
+            }
+        ]
+        console.log('display employees having salary greater than or equal to 50k')
+
+        var empsal50k = employees.filter((emp)=>emp.sal>=50000)
+        console.log(empsal50k)
 
 
 
