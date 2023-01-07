@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Content from './Content';
 import DemoForm from './components/DemoForm';
+import SimpleInterest from './components/SimpleInterest';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Header/>
       <Content/>
       <DemoForm/>
+      <SimpleInterest/>
+      
     </div>
   );
 }
