@@ -78,14 +78,10 @@
         console.log(empofAIML)
 
         console.log('sum of salary of all employees')
-        var totalsal = employees.reduce((t,emp)=>t+parseInt(emp.sal))
+        var totalsal = employees.reduce((sum,emp)=>sum+emp.sal,0)
         console.log('total salary ',totalsal)
-
-
         var total = marks.reduce((t,m)=>t+m)
         console.log('total ',total)
-
-
     </script>
     
 </body>
