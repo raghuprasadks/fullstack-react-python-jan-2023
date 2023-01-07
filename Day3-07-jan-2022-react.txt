@@ -10,6 +10,18 @@ let,const,var
 https://www.w3schools.com/REACT/react_es6_destructuring.asp
 https://www.w3schools.com/REACT/react_es6_spread.asp
 
+React
+
+open command prompt
+type node
+
+create a folder react
+npx create-react-app reactbasics
+cd reactbasics
+npm start
+
+
+
 
 react
 
@@ -23,3 +35,10 @@ write a function to calculate simple interest
 write an arrow function to check a given number is prime or not
 (num)
 
+React - Java script library used in development of front end
+Facebook
+SPA - Single Page Application
+Component based architecture 
+
+
+1. Create a Header Component
