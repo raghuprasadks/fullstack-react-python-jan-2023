@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Content from './Content';
+import DemoForm from './components/DemoForm';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       
       <Header/>
       <Content/>
+      <DemoForm/>
     </div>
   );
 }

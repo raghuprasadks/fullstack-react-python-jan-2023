@@ -12,10 +12,6 @@ const Content=()=>{
             <h1>Course is {course}</h1>
             <h1>My wishlist is {wishlist}</h1>
             <h1>Employee Code : {emp.code} Name : {emp.name} Dept : {emp.dept}</h1>
-
-        </div>
-
-    )
-}
+        </div>    )}
 
 export default Content
