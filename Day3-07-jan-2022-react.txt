@@ -44,3 +44,19 @@ Component based architecture
 1. Create a Header Component
 useState - hook
 
+const [name,setName]=useState('')
+
+private string name;
+
+public void setName(string name){
+this.name = name
+}
+
+public string getName(){
+return this.name;
+}
+
+
+1. Write a component to convert milestokms
+
+
