@@ -5,6 +5,12 @@ JS Higher Order functions - map,filter and reduce
 destructuring
 rest operator
 
+let,const,var
+
+https://www.w3schools.com/REACT/react_es6_destructuring.asp
+https://www.w3schools.com/REACT/react_es6_spread.asp
+
+
 react
 
 node

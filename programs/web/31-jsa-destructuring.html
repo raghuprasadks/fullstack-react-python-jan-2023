@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-structuring</title>
+</head>
+<body>
+
+    <h1>Destructuring</h1>
+
+    <script>
+        console.log('array destructuring')
+        vehicles=['bicycle','auto','car']
+        const [two,three,four]=vehicles
+        console.log("two ::",two,"three :: ",three,"four ::",four)
+
+        function calculate(a, b) {
+            const add = a + b;
+            const subtract = a - b;
+            const multiply = a * b;
+            const divide = a / b;
+
+        return [add, subtract, multiply, divide];
+        }
+
+        const [add, subtract, multiply, divide] = calculate(4, 7);
+        //console.log($"add :: {add} subtract :: {subtract}")
+        console.log('add ',add,' subtract ',subtract)
+
+const vehicleOne = {
+  brand: 'Ford',
+  model: 'Mustang',
+  type: 'car',
+  year: 2021, 
+  color: 'red'
+}
+
+myVehicle(vehicleOne);
+
+function myVehicle({type, color, brand, model}) {
+  const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+    console.log('message ',message)
+}
+    
+    </script>
+</body>
+</html>
