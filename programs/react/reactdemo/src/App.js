@@ -6,6 +6,7 @@ import DemoForm from './components/DemoForm';
 import SimpleInterest from './components/SimpleInterest';
 import GroceryList from './components/GroceryList';
 import GroceryListNew from './components/GroceryListNew';
+import Employee from './components/Employee';
 
 function App() {
 
@@ -41,10 +42,11 @@ function App() {
       <DemoForm/>
       <SimpleInterest/>
       <GroceryList/>
+      <GroceryListNew groceryitemsdata={groceryitems}></GroceryListNew>
+
        */}
+<Employee/>
 
-
-<GroceryListNew groceryitemsdata={groceryitems}></GroceryListNew>
 
     </div>
   );
