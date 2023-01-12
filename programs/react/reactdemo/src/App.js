@@ -55,7 +55,7 @@ function App() {
       <GroceryListNew groceryitemsdata={groceryitems}></GroceryListNew>
 
        */}
-<Employee saveEmployee={saveEmployeeHandler}/>
+<Employee saveEmployee={saveEmployeeHandler} empdata={employees}/>
 
 
     </div>

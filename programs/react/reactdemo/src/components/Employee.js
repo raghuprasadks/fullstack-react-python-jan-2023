@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-const Employee=({saveEmployee})=>{
+const Employee=({saveEmployee,empdata})=>{
     const [code,setCode]=useState(-1)
     const [name,setName]=useState('')
     const [dept,setDept]=useState('')
@@ -14,6 +14,7 @@ const Employee=({saveEmployee})=>{
     }
     return(
         <div>
+        <div>
             <form onSubmit={addEmployee}>
                 <label>Code</label><br/>
                 <input value={code} onChange={(e)=>setCode(e.target.value)}/><br/>
@@ -26,6 +27,31 @@ const Employee=({saveEmployee})=>{
                 <input type="submit" value="Add Employee"/>                
 
             </form>
+        </div>
+        <div>
+
+        <table>
+            <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+                        
+            </tr>
+            {empdata.map((emp)=>
+         <tr key={emp.code}>
+             <td>{emp.code}</td>
+             <td>{emp.dept}</td>
+             <td>{emp.sal}</td>
+            
+             
+         </tr>
+         )}
+        
+        </table>
+
+
+        </div>
         </div>
     )
 }
