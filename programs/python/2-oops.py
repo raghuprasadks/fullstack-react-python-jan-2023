@@ -44,10 +44,22 @@ emplist.append(emp1)
 emplist.append(emp2)
 emplist.append(emp3)
 print("display employees whose salary is greater than 40k")
+total = 0
+maxsal = 0
+maxsalemp = ''
 for emp in emplist:
     #print(emp.info())
     if(emp.sal > 40000):
         print(emp.info())
+
+    total = total + emp.sal
+    if (emp.sal >maxsal):
+        maxsal = emp.sal
+        maxsalemp = emp.name
+
+print('total salary ',total)
+print('max sal ',maxsal, ' employee getting max sal',maxsalemp)
+
 
 
 
