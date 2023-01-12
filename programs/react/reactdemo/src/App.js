@@ -40,7 +40,7 @@ function App() {
   const saveEmployeeHandler=(code,name,dept,sal)=>{
     let emp = {code:code,name:name,dept:dept,sal:sal}
     console.log("emp #",emp)
-    setEmployees([...employees],emp)
+    setEmployees([...employees,emp])
     console.log('employees ##',employees)    
 
   }
