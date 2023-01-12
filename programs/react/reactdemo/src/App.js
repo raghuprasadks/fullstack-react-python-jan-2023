@@ -7,6 +7,7 @@ import SimpleInterest from './components/SimpleInterest';
 import GroceryList from './components/GroceryList';
 import GroceryListNew from './components/GroceryListNew';
 import Employee from './components/Employee';
+import {useState} from 'react'
 
 function App() {
 
@@ -34,6 +35,15 @@ function App() {
     },
 ]
 
+  const [employees,setEmployees]=useState([])
+
+  const saveEmployeeHandler=(code,name,dept,sal)=>{
+    let emp = {code:code,name:name,dept:dept,sal:sal}
+    console.log("emp #",emp)
+    setEmployees([...employees],emp)
+    console.log('employees ##',employees)    
+
+  }
   return (
     <div className="App">  
       {/**
@@ -45,7 +55,7 @@ function App() {
       <GroceryListNew groceryitemsdata={groceryitems}></GroceryListNew>
 
        */}
-<Employee/>
+<Employee saveEmployee={saveEmployeeHandler}/>
 
 
     </div>
