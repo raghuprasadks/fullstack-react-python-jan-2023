@@ -11,6 +11,13 @@ const Employee=({saveEmployee,empdata})=>{
         console.log('code ',code)
         console.log('name ',name) 
         saveEmployee(code,name,dept,sal)
+        clearData()
+    }
+    const clearData=()=>{
+        setCode(-1)
+        setName('')
+        setDept('')
+        setSal(-1)
     }
     return(
         <div>
@@ -42,8 +49,7 @@ const Employee=({saveEmployee,empdata})=>{
          <tr key={emp.code}>
              <td>{emp.code}</td>
              <td>{emp.dept}</td>
-             <td>{emp.sal}</td>
-            
+             <td>{emp.sal}</td>        
              
          </tr>
          )}
