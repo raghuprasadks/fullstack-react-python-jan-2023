@@ -60,6 +60,42 @@ SPA - Single Page Application
 create GroceryList component under components folder
 
 
+Todo table
+User Id Id Todo Completed
+
+Assignment:
+
+1. Develop User Component to display following data from
+https://jsonplaceholder.typicode.com/users
+name email city phone company name
+
+
+Python
+data types
+operators
+loops
+conditional statements
+functions
+
+1. Write following in functions in python
+
+a. SimpleInterest(p,r,t)
+
+b. EvenOrOdd(num)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
