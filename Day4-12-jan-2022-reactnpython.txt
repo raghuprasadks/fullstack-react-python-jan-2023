@@ -19,6 +19,31 @@ console.log(total)
 1. CRUD
 Employee
 
+
+
+Fetching data from the backend
+
+json - java script object notation
+
+stock values
+weather
+API - Application Programming Interface
+
+Back end - API
+aadhar
+388383
+
+{
+"name":"xyz",
+"address":"xyx"
+
+}
+
+Web service
+
+json place holder fake api
+
+
 react
 node
 npm

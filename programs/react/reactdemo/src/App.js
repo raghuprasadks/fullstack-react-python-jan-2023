@@ -8,6 +8,7 @@ import GroceryList from './components/GroceryList';
 import GroceryListNew from './components/GroceryListNew';
 import Employee from './components/Employee';
 import {useState} from 'react'
+import Todos from './components/Todos';
 
 function App() {
 
@@ -53,11 +54,11 @@ function App() {
       <SimpleInterest/>
       <GroceryList/>
       <GroceryListNew groceryitemsdata={groceryitems}></GroceryListNew>
-
-       */}
 <Employee saveEmployee={saveEmployeeHandler} empdata={employees}/>
 
+       */}
 
+<Todos></Todos>
     </div>
   );
 }
