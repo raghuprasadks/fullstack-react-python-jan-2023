@@ -1,12 +1,9 @@
 import React from 'react'
 
 const Content=()=>{
-
     const course = "react"
     const wishlist=["Python","Flask","Pandas"]
-
     const emp = {code:1,name:'ravi',dept:'IT'}
-    
     return(
         <div>
             <h1>Course is {course}</h1>

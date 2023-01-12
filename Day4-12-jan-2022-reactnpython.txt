@@ -1,0 +1,37 @@
+React
+javascript higher order function
+
+map
+filter
+reduce
+
+lambda
+
+function add (n1,n2)
+return n1+n2
+
+const add =(n1,n2)=>n1+n2
+
+total = add(100,200)
+console.log(total)
+
+react
+node
+npm
+npx
+
+npx create-react-app <project name>
+npx create-react-app reactdemo
+
+cd reactdemo
+npm start
+
+SPA - Single Page Application
+
+create GroceryList component under components folder
+
+
+
+
+
+
