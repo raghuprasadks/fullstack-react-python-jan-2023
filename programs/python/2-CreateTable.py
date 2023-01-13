@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sqlite3
 
-conn = sqlite3.connect('ecommay2021.db')
+conn = sqlite3.connect('ecomjan2023.db')
 print("Opened database successfully")
 
 conn.execute('''CREATE TABLE if not exists COMPANY 

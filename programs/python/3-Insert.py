@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('ecommerceaprlnew.db')
+conn = sqlite3.connect('ecomjan2023.db')
 print("Opened database successfully")
 
 conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
