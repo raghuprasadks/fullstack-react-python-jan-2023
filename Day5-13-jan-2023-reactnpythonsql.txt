@@ -1,0 +1,58 @@
+Agenda:
+SQL
+SQL Drivers for python
+SQLITE
+DBBrowser for SQL Lite
+MySQL
+Flask - API
+Fullstack - React + Flask +SQL
+
+Write following queries using w3schools
+1. Display all the customers belonging to Germany and
+lives in Berlin
+
+SELECT * FROM customers where Country='Germany' and city='Berlin'
+
+2. Display customers of Germany and France
+SELECT * FROM customers where Country in ('Germany','France')
+
+3. Display count of customers
+SELECT count(*) as customercount FROM customers
+
+4. Display country wise count of customers
+
+SELECT Country,count (*) as customercount FROM customers group by Country 
+order by customercount desc
+
+5. Display all the orders placed by customer
+whose name starts with a
+
+SELECT * FROM customers, orders
+where orders.customerid = customers.customerid
+and customername like 'a%'
+
+SELECT Country,count (*) as customercount FROM customers group by Country 
+having customercount>5 
+order by customercount desc
+
+6. create corona table
+having following fields
+statecode - int - primary key
+statename - varchar
+totalcases - int
+activecases - int
+recoveredcases - int
+deathcases - int
+
+CREATE TABLE CoronaNew (
+    statecode int NOT NULL,
+    statename varchar(255) NOT NULL,
+    totalcases int,
+    activecases int,
+    recoveredcases int,
+    deathcases int,
+    PRIMARY KEY (statecode)
+);
+7. Insert data for karnataka,kerala and tamil nadu
+
+insert into CoronaNew values (1,'Karnataka',10000,1000,8000,1000)
