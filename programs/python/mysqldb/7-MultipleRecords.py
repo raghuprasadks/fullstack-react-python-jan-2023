@@ -3,9 +3,9 @@ from mysql.connector import Error
 from mysql.connector import errorcode
 try:
    connection = mysql.connector.connect(host='localhost',
-                             database='pythondb',
-                             user='pythonuser',
-                             password='password')
+                             database='ammlfullstackdb',
+                             user='root',
+                             password='kaushalya@2017')
 
    records_to_insert = [('Raghu','Prasad',45,'M', 10000) ,
                          ('Ramya','Prasad',40,'F', 12000),

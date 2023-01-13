@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pymysql
 # Open database connection
-db = pymysql.connect("localhost","root","kaushalya@2017","demodb")
+db = pymysql.connect(host="localhost",port=3306,user="root",passwd="kaushalya@2017",database="ammlfullstackdb")
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
 # execute SQL query using execute() method.

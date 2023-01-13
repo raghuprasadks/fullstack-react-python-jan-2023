@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pymysql
 # Open database connection
-db = pymysql.connect("localhost","root","kaushalya@123","sindhipython")
+db = pymysql.connect(host="localhost",port=3306,user="root",passwd="kaushalya@2017",database="ammlfullstackdb")
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
 # Drop table if it already exist using execute() method.
