@@ -11,7 +11,7 @@ const App=()=>{
        // .then(data=>console.log(data))
        .then(data=>setEmployees(data))
 
-    })
+    },[])
 
 
     const SaveEmployeeHandler=(code,name,dept,desg,sal)=>{
