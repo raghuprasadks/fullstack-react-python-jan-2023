@@ -56,3 +56,7 @@ CREATE TABLE CoronaNew (
 7. Insert data for karnataka,kerala and tamil nadu
 
 insert into CoronaNew values (1,'Karnataka',10000,1000,8000,1000)
+
+
+download dbbrowser for sqlite 
+https://sqlitebrowser.org/dl/
