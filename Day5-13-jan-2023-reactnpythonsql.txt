@@ -62,3 +62,14 @@ download dbbrowser for sqlite
 https://sqlitebrowser.org/dl/
 
 Create ammlfullstackdb db in mysql
+
+
+Flask  - micro web framework written in python
+
+1. create new project flaskdemo
+2. Install Flask
+3. 1-Hello.py
+
+http://127.0.0.1:5000/
+http://127.0.0.1:5000/learning
+
