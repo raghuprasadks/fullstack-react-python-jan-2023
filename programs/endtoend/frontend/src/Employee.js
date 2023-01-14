@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import './App.css';
 
-const Employee=({employees,saveEmployee})=>{
+const Employee=({employees,saveEmployee,deleteEmployee})=>{
 
-    const [code,setCode]=useState(-1)
+    const [id,setId]=useState(-1)
     const [name,setName]=useState('')
     const [dept,setDept]=useState('')
     const [desg,setDesg]=useState('')
@@ -13,16 +13,30 @@ const Employee=({employees,saveEmployee})=>{
     const AddEmployee=(e)=>{
         e.preventDefault();
        // alert ('Add Employee')
-        saveEmployee(code,name,dept,desg,sal)
+        saveEmployee(name,dept,desg,sal)
+        ClearData()    
     }
+
+    const DeleteEmployee=(e)=>{
+       // const DeleteEmployee=()=>{
+        console.log('delete employee #'+e.target.value)
+        deleteEmployee(e.target.value)
+    }
+    const ClearData=()=>{
+        setName('')
+        setDept('')
+        setDesg('')
+        setSal('')
+     }
 
     
     const tbldata = employees.map((emp)=>{
-        return <tr key={emp.code}>
+        return <tr key={emp.id}>
         <td>{emp.name}</td>
         <td>{emp.dept}</td>
         <td>{emp.desg}</td>
-        <td>{emp.sal}</td>                                                
+        <td>{emp.sal}</td>
+        <td><button value = {emp.id} onClick={DeleteEmployee}>Delete</button></td>                              
     </tr>
     })
 
@@ -34,8 +48,6 @@ const Employee=({employees,saveEmployee})=>{
             <div>
             <form onSubmit={AddEmployee}>
             <h1>Employee Form</h1><br/>
-            <label>Code</label><br/>
-            <input value={code} onChange={(e)=>setCode(e.target.value)} /><br/>
             <label>Name</label><br/>
             <input value={name} onChange={(e)=>setName(e.target.value)} /><br/>
             <label>Department</label><br/>
@@ -50,11 +62,11 @@ const Employee=({employees,saveEmployee})=>{
             </div>
             <table>
             <tr>
-            <th>Code</th>
             <th>Name</th>
             <th>Department</th>
             <th>Designation</th>
             <th>Salary</th>
+            <th>Action</th>
             </tr>
             {tbldata}
         </table>
