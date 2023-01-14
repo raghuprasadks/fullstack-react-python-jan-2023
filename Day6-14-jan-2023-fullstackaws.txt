@@ -1,4 +1,32 @@
 Full stack - End to end
 Introduction to AWS
-Feedback
+EC2 - Elastic Cloud Compute
+S3 - Simple Storage Solution
+
+Data Scientist
+Data Analyst
+Data Engineer
+
+google class - https://classroom.google.com/c/NTExOTYxNTE1Mjkz?cjc=kwnyv7f
+Feedback - https://forms.gle/7YHuwmPkC7eYFaQHA
 Coding Test
+
+Develop a Full stack application using react,python,flask and mysql
+a. Demonstrate create and list functionality of a product
+Note : create a product table
+having following fields id,name,description,category,supplier and price
+id is  int primary key and auto increment
+price is int
+other fields are varchar(100)
+Step 1 - create product table
+Step 2 - Develop product backend api
+Step 3 - Develop front end only create and list functionality
+
+Routes
+
+Ecommerce
+
+Sign Up
+Login
+Product search
+Add to Cart
